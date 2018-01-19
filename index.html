@@ -4,8 +4,21 @@
 </head>
 <body>
   <canvas width=640 height=480 id="main" onClick = "onClick(event)"></canvas>
+  <br/>
   <button onClick="engine.running=true">Run</button>
   <button onClick="engine.running=false">Stop</button>
+  <br/>
+  <p>
+    Square types:
+    <ul>
+      <li>Black - dead square</li>
+      <li>Blue - Wire/conductor.  Will turn into head when 1 or 2 heads are its neighbor.</li>
+      <li>Red - Head.  Becomes tail.</li>
+      <li>Yellow - Tail. Becomes wire.</li>
+    </ul>
+
+    Click on a square to change its type Black -> Blue -> Red -> Yellow -> Black
+  </p>
   <script src="main.js"></script>
 </body>
 </html>
